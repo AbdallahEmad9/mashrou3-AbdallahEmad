@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تواصل معي - عبــــدالله</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>نموذج التواصل</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="projects.html">أعمالي</a></li>
+      <li><a href="calculators.html">برامج حسابية</a></li>
+      <li><a href="contact.html">تواصل معي</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <form id="contactForm" onsubmit="return showMessage()">
+        <label for="name">الاسم:</label><br>
+        <input type="text" id="name" required><br><br>
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" required><br><br>
+        <label for="message">الرسالة:</label><br>
+        <textarea id="message" rows="5" required></textarea><br><br>
+        <button type="submit">إرسال</button>
+      </form>
+      <p id="confirmation" style="color: green; font-weight: bold;"></p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025  عبدالله عماد</p>
+  </footer>
+  <script>
+    function showMessage() {
+      document.getElementById("confirmation").innerText = "✅ تم إرسال الرسالة بنجاح!";
+      return false;
+    }
+  </script>
+</body>
+</html>
